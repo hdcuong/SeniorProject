@@ -1,0 +1,16 @@
+.carousel-inner img {
+  width: 100%;
+  height: 400px;
+}
+.container-fluid.custom {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.carousel-control-prev,
+.carousel-control-next {
+  width: min-content;
+}
+.row {
+  margin-left: 0px;
+  margin-right: 0px;
+}

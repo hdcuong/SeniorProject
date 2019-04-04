@@ -1,0 +1,18 @@
+.fixed-top.custom {
+  border-bottom: 1px solid transparent;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+}
+.nav-item {
+  margin-left: 10px;
+}
+.container-fuild.custom {
+  padding-bottom: 58px;
+}
+.btn-primary {
+  background-color: white;
+  color: #007bff;
+}
+.btn-primary:hover {
+  background-color: #007bff;
+  color: white;
+}
