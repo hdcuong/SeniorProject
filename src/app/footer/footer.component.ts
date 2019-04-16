@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { listLogo } from "./fake-logo";
 
 @Component({
   selector: 'app-footer',
@@ -7,8 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  images1="assets/logo/logo-fptshop.jpg";
-  images2="assets/logo/logo-tdgg.png";
+  logos = listLogo;
   constructor() { }
 
   ngOnInit() {

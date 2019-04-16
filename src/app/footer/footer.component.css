@@ -14,7 +14,7 @@
 .jumbotron {
     margin-bottom: 0px;
 }
-.col-12, .col-1 {
+.col-sm-12, .col-1, .col-sm-6 {
     padding-left: 0px;
     padding-right: 0px;
 }

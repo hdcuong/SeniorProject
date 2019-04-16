@@ -1,85 +1,90 @@
 <div class="container-fuild custom">
   <nav class="navbar navbar-expand-sm bg-white fixed-top custom">
-    <a class="navbar-brand mr-auto" routerLink="">Laptop For You</a>
-    <ul class="navbar-nav">
-      <li class="nav-item">
-        <!-- Navbar text-->
-        <span class="navbar-text">
-          Giá từ:
-        </span>
-      </li>
+    <a class="navbar-brand" routerLink="">Laptop For You</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+      <i class="fa fa-bars"></i>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <!-- Navbar text-->
+          <span class="navbar-text">
+            Giá từ:
+          </span>
+        </li>
 
-      <li class="nav-item">
-        <select name="lowPrice" class="custom-select">
-          <option value="price">5 Triệu</option>
-          <option value="price">10 Triệu</option>
-          <option value="price">15 Triệu</option>
-          <option value="price">20 Triệu</option>
-          <option value="price">25 Triệu</option>
-          <option value="price">Hơn 30 Triệu</option>
-        </select>
-      </li>
+        <li class="nav-item">
+          <select name="lowPrice" class="custom-select">
+            <option value="price">5 Triệu</option>
+            <option value="price">10 Triệu</option>
+            <option value="price">15 Triệu</option>
+            <option value="price">20 Triệu</option>
+            <option value="price">25 Triệu</option>
+            <option value="price">Hơn 30 Triệu</option>
+          </select>
+        </li>
 
-      <li class="nav-item">
-        <!-- Navbar text-->
-        <span class="navbar-text custom">
-          đến:
-        </span>
-      </li>
+        <li class="nav-item">
+          <!-- Navbar text-->
+          <span class="navbar-text custom">
+            đến:
+          </span>
+        </li>
 
-      <li class="nav-item">
-        <select name="highPrice" class="custom-select">
-          <option value="price">5 Triệu</option>
-          <option value="price">10 Triệu</option>
-          <option value="price">15 Triệu</option>
-          <option value="price">20 Triệu</option>
-          <option value="price">25 Triệu</option>
-          <option value="price">Hơn 30 Triệu</option>
-        </select>
-      </li>
+        <li class="nav-item">
+          <select name="highPrice" class="custom-select">
+            <option value="price">5 Triệu</option>
+            <option value="price">10 Triệu</option>
+            <option value="price">15 Triệu</option>
+            <option value="price">20 Triệu</option>
+            <option value="price">25 Triệu</option>
+            <option value="price">Hơn 30 Triệu</option>
+          </select>
+        </li>
 
-      <li class="nav-item">
-        <!-- Navbar text-->
-        <span class="navbar-text custom">
-          Thương hiệu:
-        </span>
-      </li>
+        <li class="nav-item">
+          <!-- Navbar text-->
+          <span class="navbar-text custom">
+            Thương hiệu:
+          </span>
+        </li>
 
-      <li class="nav-item">
-        <select name="producer" class="custom-select">
-          <option value="apple">Apple (Macbook)</option>
-          <option value="asus">Asus</option>
-          <option value="acer">Acer</option>
-          <option value="dell">Dell</option>
-          <option value="hp">HP</option>
-          <option value="lenovo">Lenovo</option>
-          <option value="msi">MSI</option>
-          <option value="masstel">Masstel</option>
-          <option value="haier">Haier</option>
-        </select>
-      </li>
+        <li class="nav-item">
+          <select name="producer" class="custom-select">
+            <option value="apple">Apple (Macbook)</option>
+            <option value="asus">Asus</option>
+            <option value="acer">Acer</option>
+            <option value="dell">Dell</option>
+            <option value="hp">HP</option>
+            <option value="lenovo">Lenovo</option>
+            <option value="msi">MSI</option>
+            <option value="masstel">Masstel</option>
+            <option value="haier">Haier</option>
+          </select>
+        </li>
 
-      <li class="nav-item">
-        <!-- Navbar text-->
-        <span class="navbar-text custom">
-          Mục đích:
-        </span>
-      </li>
+        <li class="nav-item">
+          <!-- Navbar text-->
+          <span class="navbar-text custom">
+            Mục đích:
+          </span>
+        </li>
 
-      <li class="nav-item">
-        <select name="target" class="custom-select">
-          <option value="student">Học sinh/Sinh viên</option>
-          <option value="gamer">Game thủ</option>
-          <option value="designer">Designer</option>
-          <option value="business">Kinh doanh</option>
-        </select>
-      </li>
+        <li class="nav-item">
+          <select name="target" class="custom-select">
+            <option value="student">Học sinh/Sinh viên</option>
+            <option value="gamer">Game thủ</option>
+            <option value="designer">Designer</option>
+            <option value="business">Kinh doanh</option>
+          </select>
+        </li>
 
-      <li class="nav-item">
-        <button class="btn btn-primary" routerLink="/product-list">
-          Kết quả
-        </button>
-      </li>
-    </ul>
+        <li class="nav-item">
+          <button class="btn btn-primary" routerLink="/product-list">
+            Kết quả
+          </button>
+        </li>
+      </ul>
+    </div>
   </nav>
 </div>

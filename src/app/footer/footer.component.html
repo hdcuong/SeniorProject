@@ -1,7 +1,7 @@
 <div class="container-fluid jumbotron">
   <div class="container">
     <div class="row">
-      <div class="col-6 text-center">
+      <div class="col-sm-6 text-center">
         <i class="fa fa-search fa-7x"></i>
         <h3>Laptop For You</h3>
         <p class="text-left">
@@ -9,7 +9,7 @@
           lẻ lớn, uy tín tại Việt Nam.
         </p>
       </div>
-      <div class="col-6 text-center">
+      <div class="col-sm-6 text-center">
         <i class="fa fa-laptop fa-7x"></i>
         <h3>Thông tin phong phú</h3>
         <p class="text-left">
@@ -17,7 +17,7 @@
           ảnh, thông số kỹ thuật, cấu hình sản phẩm.
         </p>
       </div>
-      <div class="col-12">
+      <div class="col-sm-12">
         <div class="border-box">
           <h6 class="custom">
             LaptopForYou là một công cụ gợi ý online, không bán hàng. Vui lòng
@@ -28,14 +28,9 @@
       </div>
     </div>
     <div class="row">
-      <div class="card col-1">
-        <a href="https://fptshop.com.vn" target="_blank" title="FPT Shop">
-          <img class="card-img-top" [src]="images1" alt="logo-fpt" />
-        </a>
-      </div>
-      <div class="card col-1">
-        <a href="https://www.thegioididong.com" target="_blank" title="Thế Giới Di Động">
-          <img class="card-img-top" [src]="images2" alt="logo-tgdd" />
+      <div class="card col-1" *ngFor="let logo of logos">
+        <a href="logo.link" target="_blank" title="logo.title">
+          <img class="card-img-top" [src]="logo.img" alt="logo.alt" />
         </a>
       </div>
     </div>
