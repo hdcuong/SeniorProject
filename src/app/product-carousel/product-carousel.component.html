@@ -1,29 +1,27 @@
 <div class="row">
   <div class="col-sm-12 pl-0 pr-0">
-      <!--data-interval: Set time for action. Unit: ms-->
-      <div id="demo" class="carousel slide" data-ride="carousel" data-interval="5000">
-        <!-- Indicators -->
-        <ul class="carousel-indicators">
-          <li data-target="#demo" data-slide-to="0" class="active"></li>
-          <li data-target="#demo" data-slide-to="1"></li>
-          <li data-target="#demo" data-slide-to="2"></li>
-          <li data-target="#demo" data-slide-to="3"></li>
-        </ul>
+    <!--data-interval: Set time for action. Unit: ms-->
+    <div id="demo" class="carousel slide" data-ride="carousel" data-interval="5000">
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+        <li data-target="#demo" data-slide-to="3"></li>
+      </ul>
 
-        <!-- The slideshow -->
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <a href="https://fptshop.com.vn/mua-laptop-den-fptshop" target="_blank">
-              <img [src]="image" alt="Laptop"
-                title="Laptop Chung - IPB - Normal sales - Laptop Giá Rẻ  - 2019 Ap - C1" />
-            </a>
-          </div>
-          <div class="carousel-item" *ngFor="let carousel of productCarousels">
-            <a href="carousel.link" target="_blank">
-              <img [src]="carousel.img" alt="carousel.alt"
-                title="carousel.title" />
-            </a>
-          </div>
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <a href="https://fptshop.com.vn/mua-laptop-den-fptshop" target="_blank">
+            <img [src]="image" alt="Laptop" title="Laptop Chung - IPB - Normal sales - Laptop Giá Rẻ  - 2019 Ap - C1" />
+          </a>
+        </div>
+        <div class="carousel-item" *ngFor="let carousel of productCarousels">
+          <a href={{carousel.link}} target="_blank">
+            <img src={{carousel.img}} alt={{carousel.alt}} title={{carousel.title}} />
+          </a>
+        </div>
 
         <!-- Left and right controls -->
         <a class="carousel-control-prev" href="#demo" data-slide="prev">
@@ -33,5 +31,5 @@
           <span class="carousel-control-next-icon"></span>
         </a>
       </div>
+    </div>
   </div>
-</div>

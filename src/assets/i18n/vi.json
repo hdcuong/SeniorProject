@@ -1,0 +1,40 @@
+{
+    "header": {
+        "labelPriceFrom": "Giá từ:",
+        "itemPriceFrom1": "5 triệu",
+        "itemPriceFrom2": "10 triệu",
+        "itemPriceFrom3": "15 triệu",
+        "itemPriceFrom4": "20 triệu",
+        "itemPriceFrom5": "25 triệu",
+        "itemPriceFrom6": "Hơn 30 triệu",
+        "labelPriceTo": "đến:",
+        "itemPriceTo1": "5 triệu",
+        "itemPriceTo2": "10 triệu",
+        "itemPriceTo3": "15 triệu",
+        "itemPriceTo4": "20 triệu",
+        "itemPriceTo5": "25 triệu",
+        "itemPriceTo6": "Hơn 30 triệu",
+        "labelTradeMark": "Thương hiệu:",
+        "itemTradeMark1": "Apple (Macbook)",
+        "itemTradeMark2": "Asus",
+        "itemTradeMark3": "Acer",
+        "itemTradeMark4": "Dell",
+        "itemTradeMark5": "HP",
+        "itemTradeMark6": "Lenovo",
+        "itemTradeMark7": "MSI",
+        "itemTradeMark8": "Masstel",
+        "itemTradeMark9": "Haier",
+        "labelAim": "Mục đích:",
+        "itemAim1": "Học sinh/Sinh viên",
+        "itemAim2": "Game thủ",
+        "itemAim3": "Nhà thiết kế",
+        "itemAim4": "Kinh doanh",
+        "resultButton": "Kết quả"
+    },
+    "footer": {
+        "information1": "Đây là trang mạng thu thập thông tin các sản phẩm máy tính xách tay tại các nhà bán lẻ lớn, uy tín tại Việt Nam.",
+        "index": "Thông tin phong phú",
+        "indexInformation": "Ngoài ra với mỗi sản phẩm, trang mạng cung cấp thông tin đầy đủ về hình ảnh, thông số kỹ thuật, cấu hình sản phẩm.",
+        "information2": "LaptopForYou là công cụ gợi ý trực tuyến, không bán hàng. Vui lòng liên hệ nơi bán để tìm hiểu tình trạng hàng hóa, thanh toán và chính sách vận chuyển."
+    }
+}

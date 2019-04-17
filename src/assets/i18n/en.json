@@ -1,0 +1,40 @@
+{
+    "header": {
+        "labelPriceFrom": "Price from:",
+        "itemPriceFrom1": "5 million",
+        "itemPriceFrom2": "10 million",
+        "itemPriceFrom3": "15 million",
+        "itemPriceFrom4": "20 million",
+        "itemPriceFrom5": "25 million",
+        "itemPriceFrom6": "More than 30 million",
+        "labelPriceTo": "to:",
+        "itemPriceTo1": "5 million",
+        "itemPriceTo2": "10 million",
+        "itemPriceTo3": "15 million",
+        "itemPriceTo4": "20 million",
+        "itemPriceTo5": "25 million",
+        "itemPriceTo6": "More than 30 million",
+        "labelTradeMark": "Trademark:",
+        "itemTradeMark1": "Apple (Macbook)",
+        "itemTradeMark2": "Asus",
+        "itemTradeMark3": "Acer",
+        "itemTradeMark9": "Dell",
+        "itemTradeMark4": "HP",
+        "itemTradeMark5": "Lenovo",
+        "itemTradeMark6": "MSI",
+        "itemTradeMark7": "Masstel",
+        "itemTradeMark8": "Haier",
+        "labelAim": "Aim:",
+        "itemAim1": "Student",
+        "itemAim2": "Gamer",
+        "itemAim3": "Designer",
+        "itemAim4": "Business",
+        "resultButton": "Result"
+    },
+    "footer": {
+        "information1": "This is a website that collects information on laptop products at large and reputable retailers in Vietnam.",
+        "index": "Rich information",
+        "indexInformation": "Each product, website provides complete information about images, specifications, configuaration of the product.",
+        "information2": "LaptopForYou is an online suggestion tool, not sales. Please, contact the seller to find out the status of goods, payment and shipping policy."
+    }
+}

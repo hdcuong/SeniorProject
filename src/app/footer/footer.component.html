@@ -5,32 +5,28 @@
         <i class="fa fa-search fa-7x"></i>
         <h3>Laptop For You</h3>
         <p class="text-left">
-          Đây là website thu thập thông tin các sản phẩm laptop tại các nhà bán
-          lẻ lớn, uy tín tại Việt Nam.
+          {{'footer.information1' | translate}}
         </p>
       </div>
       <div class="col-sm-6 text-center">
         <i class="fa fa-laptop fa-7x"></i>
-        <h3>Thông tin phong phú</h3>
+        <h3>{{'footer.index' | translate}}</h3>
         <p class="text-left">
-          Ngoài ra với mỗi sản phẩm, website cung cấp thông tin đầy đủ về hình
-          ảnh, thông số kỹ thuật, cấu hình sản phẩm.
+          {{'footer.indexInformation' | translate}}
         </p>
       </div>
       <div class="col-sm-12">
         <div class="border-box">
           <h6 class="custom">
-            LaptopForYou là một công cụ gợi ý online, không bán hàng. Vui lòng
-            liên hệ nơi bán để tìm hiểu thông tin tình trạng hàng hóa, thanh
-            toán và chính sách vận chuyển.
+            {{'footer.information2' | translate}}
           </h6>
         </div>
       </div>
     </div>
     <div class="row">
       <div class="card col-1" *ngFor="let logo of logos">
-        <a href="logo.link" target="_blank" title="logo.title">
-          <img class="card-img-top" [src]="logo.img" alt="logo.alt" />
+        <a href={{logo.link}} target="_blank" title={{logo.title}}>
+          <img class="card-img-top" src={{logo.img}} alt={{logo.alt}} />
         </a>
       </div>
     </div>

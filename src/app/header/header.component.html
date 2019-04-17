@@ -5,86 +5,90 @@
       <i class="fa fa-bars"></i>
     </button>
     <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav">
+      <ul class="navbar-nav ml-auto">
         <li class="nav-item">
           <!-- Navbar text-->
           <span class="navbar-text">
-            Giá từ:
+            {{'header.labelPriceFrom' | translate}}
           </span>
         </li>
 
         <li class="nav-item">
           <select name="lowPrice" class="custom-select">
-            <option value="price">5 Triệu</option>
-            <option value="price">10 Triệu</option>
-            <option value="price">15 Triệu</option>
-            <option value="price">20 Triệu</option>
-            <option value="price">25 Triệu</option>
-            <option value="price">Hơn 30 Triệu</option>
+            <option value="price">{{'header.itemPriceFrom1' | translate}}</option>
+            <option value="price">{{'header.itemPriceFrom2' | translate}}</option>
+            <option value="price">{{'header.itemPriceFrom3' | translate}}</option>
+            <option value="price">{{'header.itemPriceFrom4' | translate}}</option>
+            <option value="price">{{'header.itemPriceFrom5' | translate}}</option>
+            <option value="price">{{'header.itemPriceFrom6' | translate}}</option>
           </select>
         </li>
 
         <li class="nav-item">
           <!-- Navbar text-->
           <span class="navbar-text custom">
-            đến:
+            {{'header.labelPriceTo' | translate}}
           </span>
         </li>
 
         <li class="nav-item">
           <select name="highPrice" class="custom-select">
-            <option value="price">5 Triệu</option>
-            <option value="price">10 Triệu</option>
-            <option value="price">15 Triệu</option>
-            <option value="price">20 Triệu</option>
-            <option value="price">25 Triệu</option>
-            <option value="price">Hơn 30 Triệu</option>
+            <option value="price">{{'header.itemPriceTo1' | translate}}</option>
+            <option value="price">{{'header.itemPriceTo2' | translate}}</option>
+            <option value="price">{{'header.itemPriceTo3' | translate}}</option>
+            <option value="price">{{'header.itemPriceTo4' | translate}}</option>
+            <option value="price">{{'header.itemPriceTo5' | translate}}</option>
+            <option value="price">{{'header.itemPriceTo6' | translate}}</option>
           </select>
         </li>
 
         <li class="nav-item">
           <!-- Navbar text-->
           <span class="navbar-text custom">
-            Thương hiệu:
+            {{'header.labelTradeMark' | translate}}
           </span>
         </li>
 
         <li class="nav-item">
           <select name="producer" class="custom-select">
-            <option value="apple">Apple (Macbook)</option>
-            <option value="asus">Asus</option>
-            <option value="acer">Acer</option>
-            <option value="dell">Dell</option>
-            <option value="hp">HP</option>
-            <option value="lenovo">Lenovo</option>
-            <option value="msi">MSI</option>
-            <option value="masstel">Masstel</option>
-            <option value="haier">Haier</option>
+            <option value="apple">{{'header.itemTradeMark1' | translate}}</option>
+            <option value="asus">{{'header.itemTradeMark2' | translate}}</option>
+            <option value="acer">{{'header.itemTradeMark3' | translate}}</option>
+            <option value="dell">{{'header.itemTradeMark4' | translate}}</option>
+            <option value="hp">{{'header.itemTradeMark5' | translate}}</option>
+            <option value="lenovo">{{'header.itemTradeMark6' | translate}}</option>
+            <option value="msi">{{'header.itemTradeMark7' | translate}}</option>
+            <option value="masstel">{{'header.itemTradeMark8' | translate}}</option>
+            <option value="haier">{{'header.itemTradeMark9' | translate}}</option>
           </select>
         </li>
 
         <li class="nav-item">
           <!-- Navbar text-->
           <span class="navbar-text custom">
-            Mục đích:
+            {{'header.labelAim' | translate}}
           </span>
         </li>
 
         <li class="nav-item">
           <select name="target" class="custom-select">
-            <option value="student">Học sinh/Sinh viên</option>
-            <option value="gamer">Game thủ</option>
-            <option value="designer">Designer</option>
-            <option value="business">Kinh doanh</option>
+            <option value="student">{{'header.itemAim1' | translate}}</option>
+            <option value="gamer">{{'header.itemAim2' | translate}}</option>
+            <option value="designer">{{'header.itemAim3' | translate}}</option>
+            <option value="business">{{'header.itemAim4' | translate}}</option>
           </select>
         </li>
 
         <li class="nav-item">
           <button class="btn btn-primary" routerLink="/product-list">
-            Kết quả
+            {{'header.resultButton' | translate}}
           </button>
         </li>
       </ul>
+      <div class="lang-logo pl-5">
+        <img src="assets/logo/en.png" alt="English" title="English" (click)="translate.use('en')">
+        <img src="assets/logo/vi.png" alt="Việt Nam" title="Tiếng Việt" (click)="translate.use('vi')">
+      </div>
     </div>
   </nav>
 </div>
