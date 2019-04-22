@@ -12,7 +12,7 @@ export class ProductListComponent implements OnInit {
   maxSize = 5;
   products = fakeProducts;
   returnedProducts: any[];
-  constructor() {}
+  constructor() { }
 
   ngOnInit() {
     this.returnedProducts = this.products.slice(0, this.itemsPerPage);
@@ -22,5 +22,8 @@ export class ProductListComponent implements OnInit {
     const startItem = (event.page - 1) * event.itemsPerPage;
     const endItem = event.page * event.itemsPerPage;
     this.returnedProducts = this.products.slice(startItem, endItem);
+    //click phân trang thì scroll nhảy lên cùng
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
   }
 }
