@@ -1,7 +1,12 @@
 //Định nghĩa thuộc tính class product
 export class Product {
-    title: string;
-    content: string;
-    img: string;
-    price: string;
+    CPU: string;
+    ID: string;
+    IMAGE: string;
+    LINK: string;
+    OS: string;
+    RAM: string;
+    SCREEN: string;
+    VGA: string;
+    WEIGHT: string;
 }

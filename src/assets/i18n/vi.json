@@ -32,6 +32,9 @@
         "information2": "LaptopForYou là công cụ gợi ý trực tuyến, không bán hàng. Vui lòng liên hệ nơi bán để tìm hiểu tình trạng hàng hóa, thanh toán và chính sách vận chuyển."
     },
     "productList": {
-        "payButton": "Mua ngay"
+        "payButton": "Mua ngay",
+        "infor1": "Hệ điều hành",
+        "infor2": "Màn hình",
+        "infor3": "Trọng lượng"
     }
 }

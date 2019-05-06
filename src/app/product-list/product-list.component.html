@@ -1,20 +1,28 @@
 <div class="row">
   <div class="col-sm-3" *ngFor="let product of returnedProducts">
     <div class="card">
-      <img class="card-img-top" [src]="product.img" alt="avatar" />
+      <img class="card-img-top" src={{product.IMAGE}} alt="avatar" />
       <div class="card-body">
-        <h4 class="card-title">{{ product.title }}</h4>
-        <h4 class="card-title">{{ product.price }}</h4>
-        <p class="card-text">{{ product.content }}</p>
+        <h4 class="card-title">{{ product.PRICE }} VND</h4>
+        <p class="card-text">
+          CPU: {{ product.CPU }} <br>
+          RAM: {{ product.RAM }} Gb <br>
+          VGA: {{ product.VGA }} <br>
+          {{'productList.infor1' | translate}}: {{ product.OS }} <br>
+          {{'productList.infor2' | translate}}: {{ product.SCREEN }} inch <br>
+          {{'productList.infor3' | translate}}: {{ product.WEIGHT }} Kg
+        </p>
         <div class="text-center">
-          <a routerLink="" class="btn btn-primary stretched-link">{{'productList.payButton' | translate}}</a>
+          <a href={{product.LINK}} target="_blank" class="btn btn-primary stretched-link">{{'productList.payButton' | translate}}</a>
         </div>
       </div>
     </div>
   </div>
 </div>
-<div *ngIf="products.length > itemsPerPage">
+<!--
+<div *ngIf="returnedProducts.length > itemsPerPage">
   <pagination class="pagination justify-content-center custom-pagination" previousText="Trước" nextText="Sau"
-    [maxSize]="maxSize" [itemsPerPage]="itemsPerPage" [totalItems]="products.length"
+    [maxSize]="maxSize" [itemsPerPage]="itemsPerPage" [totalItems]="returnedProducts.length"
     (pageChanged)="pageChanged($event)"></pagination>
 </div>
+-->

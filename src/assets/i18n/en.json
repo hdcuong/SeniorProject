@@ -32,6 +32,9 @@
         "information2": "LaptopForYou is an online suggestion tool, not sales. Please, contact the seller to find out the status of goods, payment and shipping policy."
     },
     "productList": {
-        "payButton": "Buy now"
+        "payButton": "Buy now",
+        "infor1": "Operating System",
+        "infor2": "Monitor",
+        "infor3": "Weight"
     }
 }

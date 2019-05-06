@@ -1,95 +1,97 @@
 <div class="container-fuild custom">
-  <nav class="navbar navbar-expand-sm bg-white fixed-top custom">
-    <a class="navbar-brand" routerLink="">Laptop For You</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
-      <i class="fa fa-bars"></i>
-    </button>
-    <div class="collapse navbar-collapse" id="collapsibleNavbar">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <!-- Navbar text-->
-          <span class="navbar-text">
-            {{'header.labelPrice' | translate}}
-          </span>
-        </li>
+  <form (submit)="onSubmit()" #formSuggest="ngForm">
+    <nav class="navbar navbar-expand-sm bg-white fixed-top custom">
+      <a class="navbar-brand" routerLink="">Laptop For You</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <i class="fa fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <!-- Navbar text-->
+            <span class="navbar-text">
+              {{'header.labelPrice' | translate}}
+            </span>
+          </li>
 
-        <li class="nav-item">
-          <select name="price" class="custom-select">
-            <option value="1">{{'header.itemPrice1' | translate}}</option>
-            <option value="2">{{'header.itemPrice2' | translate}}</option>
-            <option value="3">{{'header.itemPrice3' | translate}}</option>
-            <option value="4">{{'header.itemPrice4' | translate}}</option>
-            <option value="5">{{'header.itemPrice5' | translate}}</option>
-            <option value="6">{{'header.itemPrice6' | translate}}</option>
-          </select>
-        </li>
-        <!--
-        <li class="nav-item">
-          <span class="navbar-text custom">
-            {{'header.labelPriceTo' | translate}}
-          </span>
-        </li>
-        -->
-        <!--
-        <li class="nav-item">
-          <select name="highPrice" class="custom-select">
-            <option value="price">{{'header.itemPriceTo1' | translate}}</option>
-            <option value="price">{{'header.itemPriceTo2' | translate}}</option>
-            <option value="price">{{'header.itemPriceTo3' | translate}}</option>
-            <option value="price">{{'header.itemPriceTo4' | translate}}</option>
-            <option value="price">{{'header.itemPriceTo5' | translate}}</option>
-            <option value="price">{{'header.itemPriceTo6' | translate}}</option>
-          </select>
-        </li>
-        -->
-        <li class="nav-item">
-          <!-- Navbar text-->
-          <span class="navbar-text custom">
-            {{'header.labelTradeMark' | translate}}
-          </span>
-        </li>
+          <li class="nav-item">
+            <select [(ngModel)]="price" name="price" class="custom-select">
+              <option value="1">{{'header.itemPrice1' | translate}}</option>
+              <option value="2">{{'header.itemPrice2' | translate}}</option>
+              <option value="3">{{'header.itemPrice3' | translate}}</option>
+              <option value="4">{{'header.itemPrice4' | translate}}</option>
+              <option value="5">{{'header.itemPrice5' | translate}}</option>
+              <option value="6">{{'header.itemPrice6' | translate}}</option>
+            </select>
+          </li>
+          <!--
+                      <li class="nav-item">
+                        <span class="navbar-text custom">
+                          {{'header.labelPriceTo' | translate}}
+                        </span>
+                      </li>
+                      -->
+          <!--
+                      <li class="nav-item">
+                        <select name="highPrice" class="custom-select">
+                          <option value="price">{{'header.itemPriceTo1' | translate}}</option>
+                          <option value="price">{{'header.itemPriceTo2' | translate}}</option>
+                          <option value="price">{{'header.itemPriceTo3' | translate}}</option>
+                          <option value="price">{{'header.itemPriceTo4' | translate}}</option>
+                          <option value="price">{{'header.itemPriceTo5' | translate}}</option>
+                          <option value="price">{{'header.itemPriceTo6' | translate}}</option>
+                        </select>
+                      </li>
+                      -->
+          <li class="nav-item">
+            <!-- Navbar text-->
+            <span class="navbar-text custom">
+              {{'header.labelTradeMark' | translate}}
+            </span>
+          </li>
 
-        <li class="nav-item">
-          <select name="producer" class="custom-select">
-            <option value="NoBarnd" selected>{{'header.itemTradeMark1' | translate}}</option>
-            <option value="Apple">{{'header.itemTradeMark2' | translate}}</option>
-            <option value="Asus">{{'header.itemTradeMark3' | translate}}</option>
-            <option value="Acer">{{'header.itemTradeMark4' | translate}}</option>
-            <option value="Dell">{{'header.itemTradeMark5' | translate}}</option>
-            <option value="HP">{{'header.itemTradeMark6' | translate}}</option>
-            <option value="Lenovo">{{'header.itemTradeMark7' | translate}}</option>
-            <option value="MSI">{{'header.itemTradeMark8' | translate}}</option>
-            <option value="Masstel">{{'header.itemTradeMark9' | translate}}</option>
-            <option value="Haier">{{'header.itemTradeMark10' | translate}}</option>
-          </select>
-        </li>
+          <li class="nav-item">
+            <select [(ngModel)]="producer" name="producer" class="custom-select">
+              <option value="NoBrand">{{'header.itemTradeMark1' | translate}}</option>
+              <option value="Apple">{{'header.itemTradeMark2' | translate}}</option>
+              <option value="Asus">{{'header.itemTradeMark3' | translate}}</option>
+              <option value="Acer">{{'header.itemTradeMark4' | translate}}</option>
+              <option value="Dell">{{'header.itemTradeMark5' | translate}}</option>
+              <option value="HP">{{'header.itemTradeMark6' | translate}}</option>
+              <option value="Lenovo">{{'header.itemTradeMark7' | translate}}</option>
+              <option value="MSI">{{'header.itemTradeMark8' | translate}}</option>
+              <option value="Masstel">{{'header.itemTradeMark9' | translate}}</option>
+              <option value="Haier">{{'header.itemTradeMark10' | translate}}</option>
+            </select>
+          </li>
 
-        <li class="nav-item">
-          <!-- Navbar text-->
-          <span class="navbar-text custom">
-            {{'header.labelAim' | translate}}
-          </span>
-        </li>
+          <li class="nav-item">
+            <!-- Navbar text-->
+            <span class="navbar-text custom">
+              {{'header.labelAim' | translate}}
+            </span>
+          </li>
 
-        <li class="nav-item">
-          <select name="target" class="custom-select">
-            <option value="student">{{'header.itemAim1' | translate}}</option>
-            <option value="game">{{'header.itemAim2' | translate}}</option>
-            <option value="design">{{'header.itemAim3' | translate}}</option>
-            <option value="business">{{'header.itemAim4' | translate}}</option>
-          </select>
-        </li>
+          <li class="nav-item">
+            <select [(ngModel)]="object" name="object" class="custom-select">
+              <option value="student">{{'header.itemAim1' | translate}}</option>
+              <option value="game">{{'header.itemAim2' | translate}}</option>
+              <option value="design">{{'header.itemAim3' | translate}}</option>
+              <option value="business">{{'header.itemAim4' | translate}}</option>
+            </select>
+          </li>
 
-        <li class="nav-item">
-          <button class="btn btn-primary" routerLink="/product-list">
-            {{'header.resultButton' | translate}}
-          </button>
-        </li>
-      </ul>
-      <div class="lang-logo pl-5">
-        <img src="assets/logo/en.png" alt="English" title="English" (click)="translate.use('en')">
-        <img src="assets/logo/vi.png" alt="Việt Nam" title="Tiếng Việt" (click)="translate.use('vi')">
+          <li class="nav-item">
+            <button class="btn btn-primary" routerLink="/product-list">
+              {{'header.resultButton' | translate}}
+            </button>
+          </li>
+        </ul>
+        <div class="lang-logo pl-5">
+          <img src="assets/logo/en.png" alt="English" title="English" (click)="translate.use('en')">
+          <img src="assets/logo/vi.png" alt="Việt Nam" title="Tiếng Việt" (click)="translate.use('vi')">
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </form>
 </div>
