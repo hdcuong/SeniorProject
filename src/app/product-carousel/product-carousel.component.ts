@@ -1,5 +1,5 @@
 import { Component, OnInit } from "@angular/core";
-import { listCarousel } from "./list-carousel";
+import { carouselList } from "./carouselList";
 
 @Component({
   selector: "app-product-carousel",
@@ -9,7 +9,7 @@ import { listCarousel } from "./list-carousel";
 export class ProductCarouselComponent implements OnInit {
   
   image = "assets/logo/carousel-fptshop.png";
-  productCarousels = listCarousel;
+  productCarousels = carouselList;
   constructor() {}
 
   ngOnInit() {}

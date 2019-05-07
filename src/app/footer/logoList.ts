@@ -1,6 +1,6 @@
 //Tạo list Object có kiểu dữ liệu là Logo
 import { Logo } from "../models/logo";
-export var listLogo: Logo[] = [
+export var logoList: Logo[] = [
     {
         link: "https://fptshop.com.vn",
         title: "FPT Shop",

@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { listLogo } from "./fake-logo";
+import { logoList } from "./logoList";
 import { TranslateService } from "@ngx-translate/core";
 
 @Component({
@@ -9,7 +9,7 @@ import { TranslateService } from "@ngx-translate/core";
 })
 export class FooterComponent implements OnInit {
 
-  logos = listLogo;
+  logos = logoList;
   constructor(public translate: TranslateService) { 
     translate.use('vi');
   }

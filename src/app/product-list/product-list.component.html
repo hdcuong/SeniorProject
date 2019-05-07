@@ -1,20 +1,21 @@
-<div class="row">
-  <div class="col-sm-3" *ngFor="let product of returnedProducts">
-    <div class="card">
-      <img class="card-img-top" src={{product.IMAGE}} alt="avatar" />
+<div class="container-fluid pl-0 pr-0">
+  <div class="row">
+    <div class="card" *ngFor="let product of returnedProducts">
+      <img src={{product.IMAGE}} alt="Avatar" class="card-img-top">
       <div class="card-body">
         <h4 class="card-title">{{ product.PRICE }} VND</h4>
         <p class="card-text">
           CPU: {{ product.CPU }} <br>
           RAM: {{ product.RAM }} Gb <br>
           VGA: {{ product.VGA }} <br>
-          {{'productList.infor1' | translate}}: {{ product.OS }} <br>
-          {{'productList.infor2' | translate}}: {{ product.SCREEN }} inch <br>
-          {{'productList.infor3' | translate}}: {{ product.WEIGHT }} Kg
+          {{ 'productList.infor1' | translate }}: {{ product.OS }} <br>
+          {{ 'productList.infor2' | translate }}: {{ product.SCREEN }} Inch<br>
+          {{ 'productList.infor3' | translate }}: {{ product.WEIGHT }} Kg
         </p>
-        <div class="text-center">
-          <a href={{product.LINK}} target="_blank" class="btn btn-primary stretched-link">{{'productList.payButton' | translate}}</a>
-        </div>
+      </div>
+      <div class="text-center">
+        <a href={{product.LINK}} target="_blank" class="btn btn-primary stretched-link">
+          {{ 'productList.payButton' | translate }} </a>
       </div>
     </div>
   </div>

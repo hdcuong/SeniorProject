@@ -33,7 +33,6 @@ export class HeaderComponent implements OnInit {
     this.http.get<any[]>(url, { params: httpParams }).subscribe(data => {
       this.arrayResults = data;
       this.data.changeResult(this.arrayResults);
-      console.log(this.arrayResults);
     }
     );
   }

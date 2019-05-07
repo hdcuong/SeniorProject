@@ -1,6 +1,6 @@
 //Tạo list Object có kiểu dữ liệu product-carousel
 import { ProductCarousel } from "../models/carousel";
-export var listCarousel: ProductCarousel[] = [
+export var carouselList: ProductCarousel[] = [
     {
         link: "https://fptshop.com.vn/laptop-gaming",
         title: "Laptop Chung - IPB - Normal sales - Laptop Giá Rẻ  - 2019 Ap - C1",
