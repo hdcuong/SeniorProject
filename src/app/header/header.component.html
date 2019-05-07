@@ -5,6 +5,7 @@
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
         <i class="fa fa-bars"></i>
       </button>
+
       <div class="collapse navbar-collapse" id="collapsibleNavbar">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item">
@@ -24,25 +25,7 @@
               <option value="6">{{'header.itemPrice6' | translate}}</option>
             </select>
           </li>
-          <!--
-                      <li class="nav-item">
-                        <span class="navbar-text custom">
-                          {{'header.labelPriceTo' | translate}}
-                        </span>
-                      </li>
-                      -->
-          <!--
-                      <li class="nav-item">
-                        <select name="highPrice" class="custom-select">
-                          <option value="price">{{'header.itemPriceTo1' | translate}}</option>
-                          <option value="price">{{'header.itemPriceTo2' | translate}}</option>
-                          <option value="price">{{'header.itemPriceTo3' | translate}}</option>
-                          <option value="price">{{'header.itemPriceTo4' | translate}}</option>
-                          <option value="price">{{'header.itemPriceTo5' | translate}}</option>
-                          <option value="price">{{'header.itemPriceTo6' | translate}}</option>
-                        </select>
-                      </li>
-                      -->
+
           <li class="nav-item">
             <!-- Navbar text-->
             <span class="navbar-text custom">
@@ -87,6 +70,7 @@
             </button>
           </li>
         </ul>
+
         <div class="lang-logo pl-5">
           <img src="assets/logo/en.png" alt="English" title="English" (click)="translate.use('en')">
           <img src="assets/logo/vi.png" alt="Việt Nam" title="Tiếng Việt" (click)="translate.use('vi')">

@@ -6,7 +6,6 @@ import { Routes, RouterModule } from "@angular/router";
 import { TranslateModule, TranslateLoader } from "@ngx-translate/core";
 import { HttpClientModule, HttpClient } from "@angular/common/http";
 import { TranslateHttpLoader } from "@ngx-translate/http-loader";
-import { PaginationModule } from "ngx-bootstrap/pagination";
 
 import { HeaderComponent } from "./header/header.component";
 import { FooterComponent } from "./footer/footer.component";
@@ -39,7 +38,6 @@ export function HttpLoaderFactory(http: HttpClient) {
   ],
   imports: [
     FormsModule,
-    PaginationModule.forRoot(),
     RouterModule.forRoot(routes),
     BrowserModule,
     HttpClientModule,
