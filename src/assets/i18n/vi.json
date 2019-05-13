@@ -33,8 +33,8 @@
     },
     "productList": {
         "payButton": "Mua ngay",
-        "infor1": "Hệ điều hành",
-        "infor2": "Màn hình",
-        "infor3": "Trọng lượng"
+        "OS": "Hệ điều hành",
+        "Monitor": "Màn hình",
+        "Weight": "Trọng lượng"
     }
 }

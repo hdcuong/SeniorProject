@@ -28,3 +28,15 @@
   background-color: white;
   border-top: none;
 }
+
+@media (min-width: 576px) {
+  .card-group {
+    width: 100%;
+  }
+  .card {
+    position: relative;
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 20%;
+  }
+}
