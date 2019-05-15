@@ -9,7 +9,7 @@ class ThegioididongSpider(scrapy.Spider):
     
     name = "tgdd"
     allowed_domains = ['thegioididong.com']
-    start_urls = ["https://www.thegioididong.com/laptop-dell","https://www.thegioididong.com/laptop-asus", "https://www.thegioididong.com/laptop-hp-compaq", "https://www.thegioididong.com/laptop-acer", "https://www.thegioididong.com/laptop-acer", "https://www.thegioididong.com/laptop-lenovo", "https://www.thegioididong.com/laptop-msi"]
+    start_urls = ["https://www.thegioididong.com/laptop-dell","https://www.thegioididong.com/laptop-asus", "https://www.thegioididong.com/laptop-hp-compaq", "https://www.thegioididong.com/laptop-acer", "https://www.thegioididong.com/laptop-acer", "https://www.thegioididong.com/laptop-lenovo", "https://www.thegioididong.com/laptop-msi", "https://www.thegioididong.com/laptop-apple-macbook"]
     
     def start_requests(self):
         for url in self.start_urls:

@@ -33,7 +33,11 @@ with open('datatg.csv') as miningfile:
         #Mining OS
         os = row[7]
         #Mining Weight
-        weight = float((row[8].split(" "))[1].rstrip("kg, "))
+        weighttemp = float((row[8].split(" "))[1].rstrip("kg, "))
+        if weighttemp > 1000:
+            weight = weighttemp/1000
+        else:
+            weight = weighttemp
         #Mining Link
         link = row[9]
         f.writerow([brand, price, image, screen , cpu, ram, vga, os, weight, link]) 

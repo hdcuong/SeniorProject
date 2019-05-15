@@ -1,7 +1,7 @@
 import csv
 
 f = csv.writer(open('PointRank.csv', 'w'))
-f.writerow(['ID', 'GAME', 'BUSINESS', 'STUDENT', 'DESIGN'])
+f.writerow(['ID', 'GAME', 'BUSINESS', 'STUDENT', 'DESIGN', 'VGA'])
 
 #Calculator point of Game
 def gamePoint(screen, cpu, ram):
@@ -28,12 +28,14 @@ with open('laptoppointfpt.csv') as miningfile:
         a = int(row[1])
         b = int(row[2])
         c = int(row[3])
+        d = int(row[4])
         ID = row[0]
         game = format(gamePoint(a, b, c), '.2f')
         business = format(businessPoint(a, b, c), '.2f')
         student = format(studentPoint(a, b, c), '.2f')
         design = format(designPoint(a, b, c), '.2f')
-        f.writerow([ID, game, business, student, design])
+        vga = d
+        f.writerow([ID, game, business, student, design, vga])
 #Write rank point of tgdd to file
 
 with open('laptoppointtgdd.csv') as miningfile:
@@ -43,9 +45,11 @@ with open('laptoppointtgdd.csv') as miningfile:
         a = int(row[1])
         b = int(row[2])
         c = int(row[3])
+        d = int(row[4])
         ID = row[0]
         game = format(gamePoint(a, b, c), '.2f')
         business = format(businessPoint(a, b, c), '.2f')
         student = format(studentPoint(a, b, c), '.2f')
         design = format(designPoint(a, b, c), '.2f')
-        f.writerow([ID, game, business, student, design])
+        vga = d
+        f.writerow([ID, game, business, student, design, vga])

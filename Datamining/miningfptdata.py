@@ -30,7 +30,12 @@ with open('datafpt.csv') as miningfile:
         #Mining OS
         os = row[7]
         #Mining Weight
-        weight = float((row[8].split(" "))[0].rstrip("kg"))
+        weighttemp = float((row[8].split(" "))[0].rstrip("kg"))
+        if weighttemp > 1000:
+            weight = weighttemp/1000
+        else:
+            weight = weighttemp
+        print(weight)
         #Mining Link
         link = row[9]
         #Save data to new csv file
