@@ -27,13 +27,49 @@ export class HeaderComponent implements OnInit {
     let price = this.price;
     let producer = this.producer;
     let object = this.object;
-    let httpParams = new HttpParams().append('price', price.toString())
-      .append('brand', producer).append('typelt', object);
-    const url = 'http://localhost:5000/request';
-    this.http.get<any[]>(url, { params: httpParams }).subscribe(data => {
-      this.arrayResults = data;
-      this.data.changeResult(this.arrayResults);
+
+    if (object == 'student') {
+      let httpParams = new HttpParams().append('price', price.toString())
+        .append('brand', producer);
+      const url = 'http://localhost:5000/request/student';
+      this.http.get<any[]>(url, { params: httpParams }).subscribe(data => {
+        this.arrayResults = data;
+        this.data.changeResult(this.arrayResults);
+      }
+      );
     }
-    );
+
+    if (object == 'game') {
+      let httpParams = new HttpParams().append('price', price.toString())
+        .append('brand', producer);
+      const url = 'http://localhost:5000/request/game';
+      this.http.get<any[]>(url, { params: httpParams }).subscribe(data => {
+        this.arrayResults = data;
+        this.data.changeResult(this.arrayResults);
+      }
+      );
+    }
+
+    if (object == 'design') {
+      let httpParams = new HttpParams().append('price', price.toString())
+        .append('brand', producer);
+      const url = 'http://localhost:5000/request/design';
+      this.http.get<any[]>(url, { params: httpParams }).subscribe(data => {
+        this.arrayResults = data;
+        this.data.changeResult(this.arrayResults);
+      }
+      );
+    }
+
+    if (object == 'business') {
+      let httpParams = new HttpParams().append('price', price.toString())
+        .append('brand', producer);
+      const url = 'http://localhost:5000/request/business';
+      this.http.get<any[]>(url, { params: httpParams }).subscribe(data => {
+        this.arrayResults = data;
+        this.data.changeResult(this.arrayResults);
+      }
+      );
+    }
   }
 }
