@@ -49,8 +49,8 @@ def game():
                     cur.execute(temp)
         except:
             con.rollback()
-            columns = [column[0] for column in cur.description]
-            results = []
+        columns = [column[0] for column in cur.description]
+        results = []
         for row in cur.fetchall():
             results.append(dict(zip(columns, row)))
         return jsonify(results)
@@ -94,8 +94,8 @@ def student():
                     cur.execute(temp)
         except:
             con.rollback()
-            columns = [column[0] for column in cur.description]
-            results = []
+        columns = [column[0] for column in cur.description]
+        results = []
         for row in cur.fetchall():
             results.append(dict(zip(columns, row)))
         return jsonify(results)
@@ -139,8 +139,8 @@ def business():
                     cur.execute(temp)
         except:
             con.rollback()
-            columns = [column[0] for column in cur.description]
-            results = []
+        columns = [column[0] for column in cur.description]
+        results = []
         for row in cur.fetchall():
             results.append(dict(zip(columns, row)))
         return jsonify(results)
@@ -184,8 +184,8 @@ def design():
                     cur.execute(temp)
         except:
             con.rollback()
-            columns = [column[0] for column in cur.description]
-            results = []
+        columns = [column[0] for column in cur.description]
+        results = []
         for row in cur.fetchall():
             results.append(dict(zip(columns, row)))
         return jsonify(results)
