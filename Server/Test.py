@@ -1,1 +1,9 @@
-SELECT IF.ID, IF.IMAGE, BR.PRICE,  IF.SCREEN, IF.CPU, IF.RAM, IF.VGA, IF.OS, IF.WEIGHT, IF.LINK FROM INFORMATION IF JOIN POINTLAPTOP PL ON IF.ID = PL.ID JOIN BRAND BR ON PL.ID = BR.ID WHERE 20000000 <= BR.PRICE and BR.PRICE <= 25000000 ORDER BY PL.GAME, PL.VGA DESC LIMIT 5
+from flask import Flask
+app = Flask(__name__)
+
+@app.route('/')
+def hello_world():
+   return 'Hello World’
+
+if __name__ == '__main__':
+   app.run()
