@@ -191,5 +191,5 @@ def design():
         return jsonify(results)
 
 if __name__ == '__main__':
-    app.run()
+    app.run(host="http://172.31.43.197/", port=80)
 con.close()
