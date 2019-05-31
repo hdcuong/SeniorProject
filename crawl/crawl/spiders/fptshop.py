@@ -23,10 +23,8 @@ class FptShopSpider(scrapy.Spider):
             item["name"] = data.xpath("./div/div[1]/h3/a/span/text()").extract_first()
             item["price"] = data.xpath("./div/div[1]/div[1]/p/text()").extract_first()
             item["image"] = data.xpath("./a/p/img/@data-original").extract_first()
-            # item["image"] = data.xpath("./a/p/img/@src").extract_first()
             if item["image"] == None:
                 item["image"] = data.xpath("./a/p/img/@src").extract_first()
-                # item["image"] = data.xpath("./a/p/img/@data-original").extract_first()
             item["screen"] = data.xpath("./div/div[2]/ul/li[1]/text()").extract_first()
             item["cpu"] = data.xpath("./div/div[2]/ul/li[2]/text()").extract_first()
             item["ram"] = data.xpath("./div/div[2]/ul/li[3]/text()").extract_first()
